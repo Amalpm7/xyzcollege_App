@@ -8,6 +8,7 @@ import { FormsModule } from "@angular/forms";
 import { RouterModule, Routes } from '@angular/router';
 import { DashComponent } from './dash/dash.component';
 import { AddSComponent } from './add-s/add-s.component';
+import { ViewSComponent } from './view-s/view-s.component';
 
 const appRoutes:Routes=[
   {
@@ -15,6 +16,9 @@ const appRoutes:Routes=[
   },
   {
     path:"addS",component:AddSComponent
+  },
+  {
+    path:"viewS",component:ViewSComponent
   }
  
 ]
@@ -23,7 +27,8 @@ const appRoutes:Routes=[
     AppComponent,
     LoginComponent,
     DashComponent,
-    AddSComponent
+    AddSComponent,
+    ViewSComponent
   ],
   imports: [
     BrowserModule,
