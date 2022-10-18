@@ -7,10 +7,14 @@ import { LoginComponent } from './login/login.component';
 import { FormsModule } from "@angular/forms";
 import { RouterModule, Routes } from '@angular/router';
 import { DashComponent } from './dash/dash.component';
+import { AddSComponent } from './add-s/add-s.component';
 
 const appRoutes:Routes=[
   {
     path:"",component:LoginComponent
+  },
+  {
+    path:"addS",component:AddSComponent
   }
  
 ]
@@ -18,7 +22,8 @@ const appRoutes:Routes=[
   declarations: [
     AppComponent,
     LoginComponent,
-    DashComponent
+    DashComponent,
+    AddSComponent
   ],
   imports: [
     BrowserModule,
