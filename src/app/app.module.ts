@@ -9,6 +9,7 @@ import { RouterModule, Routes } from '@angular/router';
 import { DashComponent } from './dash/dash.component';
 import { AddSComponent } from './add-s/add-s.component';
 import { ViewSComponent } from './view-s/view-s.component';
+import { AddFComponent } from './add-f/add-f.component';
 
 const appRoutes:Routes=[
   {
@@ -19,6 +20,9 @@ const appRoutes:Routes=[
   },
   {
     path:"viewS",component:ViewSComponent
+  },
+  {
+    path:"addF",component:AddFComponent
   }
  
 ]
@@ -28,7 +32,8 @@ const appRoutes:Routes=[
     LoginComponent,
     DashComponent,
     AddSComponent,
-    ViewSComponent
+    ViewSComponent,
+    AddFComponent
   ],
   imports: [
     BrowserModule,
