@@ -10,6 +10,7 @@ import { DashComponent } from './dash/dash.component';
 import { AddSComponent } from './add-s/add-s.component';
 import { ViewSComponent } from './view-s/view-s.component';
 import { AddFComponent } from './add-f/add-f.component';
+import { ViewFComponent } from './view-f/view-f.component';
 
 const appRoutes:Routes=[
   {
@@ -23,6 +24,9 @@ const appRoutes:Routes=[
   },
   {
     path:"addF",component:AddFComponent
+  },
+  {
+    path:"viewF",component:ViewFComponent
   }
  
 ]
@@ -33,7 +37,8 @@ const appRoutes:Routes=[
     DashComponent,
     AddSComponent,
     ViewSComponent,
-    AddFComponent
+    AddFComponent,
+    ViewFComponent
   ],
   imports: [
     BrowserModule,
