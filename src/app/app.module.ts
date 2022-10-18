@@ -6,16 +6,19 @@ import { AppComponent } from './app.component';
 import { LoginComponent } from './login/login.component';
 import { FormsModule } from "@angular/forms";
 import { RouterModule, Routes } from '@angular/router';
+import { DashComponent } from './dash/dash.component';
 
 const appRoutes:Routes=[
   {
     path:"",component:LoginComponent
   }
+ 
 ]
 @NgModule({
   declarations: [
     AppComponent,
-    LoginComponent
+    LoginComponent,
+    DashComponent
   ],
   imports: [
     BrowserModule,
