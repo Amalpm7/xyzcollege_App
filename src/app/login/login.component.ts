@@ -17,7 +17,7 @@ export class LoginComponent implements OnInit {
     "password":this.password
     }
     if (this.name=="admin"&& this.password=="admin") {
-      this.myrouter.navigate(["/app-add-s"])
+      this.myrouter.navigate(["/addS"])
     } else {
       alert("Invalid Credentials")
     }console.log(data)
