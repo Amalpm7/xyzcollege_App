@@ -10,26 +10,28 @@ export class AddSComponent implements OnInit {
   constructor() { }
   name=""
   roll_no=""
+  admission_no=""
   college=""
   department=""
-  blood_group=""
+  bloodGroup=""
   dob=""
-  parent_name=""
-  parent_email=""
-  guardian_name=""
-  guardian_address=""
+  parentName=""
+  parentEmail=""
+  guardianName=""
+  guardianAddress=""
   readvalue=()=>{
     let data={
       "name":this.name,
       "roll_no":this.roll_no,
+      "admission_no":this.admission_no,
       "college":this.college,
       "department":this.department,
-      "blood_group":this.blood_group,
+      "bloodGroup":this.bloodGroup,
       "dob":this.dob,
-      "parent_name":this.parent_name,
-      "parent_email":this.parent_email,
-      "guardian_name":this.guardian_name,
-      "guardian_address":this.guardian_address
+      "parentName":this.parentName,
+      "parentEmail":this.parentEmail,
+      "guardianName":this.guardianName,
+      "guardianAddress":this.guardianAddress
     }
     console.log(data)
   }
