@@ -11,6 +11,7 @@ import { AddSComponent } from './add-s/add-s.component';
 import { ViewSComponent } from './view-s/view-s.component';
 import { AddFComponent } from './add-f/add-f.component';
 import { ViewFComponent } from './view-f/view-f.component';
+import { HttpClientModule } from "@angular/common/http";
 
 const appRoutes:Routes=[
   {
@@ -44,7 +45,8 @@ const appRoutes:Routes=[
     BrowserModule,
     AppRoutingModule,
     FormsModule,
-    RouterModule.forRoot(appRoutes)
+    RouterModule.forRoot(appRoutes),
+    HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent]
