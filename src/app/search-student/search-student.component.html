@@ -1,0 +1,62 @@
+<app-dash></app-dash>
+<div class="container">
+    <div class="row">
+        <div class="col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12">
+            <div class="row g-3">
+                <div class="col col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12">
+                    <label for="" class="form-label">Search</label>
+                    <input type="text" class="form-control"name="name" [(ngModel)]="name">
+                </div>
+                <div class="col col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12">
+                    <button class="btn btn-success"(click)="readvalue()">Search</button>
+                </div>
+                <div *ngFor="let i of studentData">
+                    <div class="col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12">
+                        <label for="" class="form-label">Name</label>
+                        <input type="text" class="form-control"value="{{i.name}}">
+                    </div>
+                    <div class="col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12">
+                        <label for="" class="form-label">Roll Number</label>
+                        <input type="text" class="form-control"value="{{i.roll_no}}">
+                    </div>
+                    <div class="col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12">
+                        <label for="" class="form-label">Admission Number</label>
+                        <input type="text" class="form-control" value="{{i.admission_no}}">
+                    </div>
+                    <div class="col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12">
+                        <label for="" class="form-label">College</label>
+                        <input type="text" class="form-control"value="{{i.college}}">
+                    </div>
+                    <div class="col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12">
+                        <label for="" class="form-label">Department</label>
+                        <input type="text" class="form-control"value="{{i.department}}">
+                    </div>
+                    <div class="col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12">
+                        <label for="" class="form-label">Blood Group</label>
+                        <input type="text" class="form-control" value="{{i.bloodGroup}}">
+                    </div>
+                    <div class="col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12">
+                        <label for="" class="form-label">DOB</label>
+                        <input type="text" class="form-control"value="{{i.dob}}">
+                    </div>
+                    <div class="col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12">
+                        <label for="" class="form-label">Parent Name</label>
+                        <input type="text" class="form-control"value="{{i.parentName}}">
+                    </div>
+                    <div class="col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12">
+                        <label for="" class="form-label">Parent Email</label>
+                        <input type="text" class="form-control"value="{{i.parentEmail}}">
+                    </div>
+                    <div class="col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12">
+                        <label for="" class="form-label">Guardian Name</label>
+                        <input type="text" class="form-control"value="{{i.guardianName}}">
+                    </div>
+                    <div class="col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12">
+                        <label for="" class="form-label">Guardian Address</label>
+                        <input type="text" class="form-control"value="{{i.guardianAddress}}">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

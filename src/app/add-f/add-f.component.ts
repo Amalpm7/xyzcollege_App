@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { ApiService } from '../api.service';
 
 @Component({
   selector: 'app-add-f',
@@ -7,7 +8,7 @@ import { Component, OnInit } from '@angular/core';
 })
 export class AddFComponent implements OnInit {
 
-  constructor() { }
+  constructor(private myapi:ApiService) { }
   name=""
   department=""
   designation=""
@@ -28,6 +29,11 @@ export class AddFComponent implements OnInit {
       "doj":this.doj
     }
     console.log(data)
+    this.myapi.putDataF(data).subscribe(
+        (response)=>{
+          
+        }
+    )
   }
 
   ngOnInit(): void {

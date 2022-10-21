@@ -12,6 +12,8 @@ import { ViewSComponent } from './view-s/view-s.component';
 import { AddFComponent } from './add-f/add-f.component';
 import { ViewFComponent } from './view-f/view-f.component';
 import { HttpClientModule } from "@angular/common/http";
+import { SearchStudentComponent } from './search-student/search-student.component';
+import { SearchFacultyComponent } from './search-faculty/search-faculty.component';
 
 const appRoutes:Routes=[
   {
@@ -28,6 +30,12 @@ const appRoutes:Routes=[
   },
   {
     path:"viewF",component:ViewFComponent
+  },
+  {
+    path:"search",component:SearchStudentComponent
+  },
+  {
+    path:"searchF",component:SearchFacultyComponent
   }
  
 ]
@@ -39,7 +47,9 @@ const appRoutes:Routes=[
     AddSComponent,
     ViewSComponent,
     AddFComponent,
-    ViewFComponent
+    ViewFComponent,
+    SearchStudentComponent,
+    SearchFacultyComponent
   ],
   imports: [
     BrowserModule,
